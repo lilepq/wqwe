@@ -1,16 +1,24 @@
-import './App.css'
-import Header from "./Header.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Header";
+import AdminPage from "./AdminPage";
+import CatalogPage from "./CatalogPage";
+import AddProductPage from "./AddProductPage";
+
+
+
+
+
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <h1>Админ-панель</h1>
-        <button>Каталог</button>
-        <button>Добавить товар</button>
-      </main>
-    </div>
+    <BrowserRouter>
+    <Header/>
+      <Routes>
+        <Route path="/" element={<AdminPage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/add-product" element={<AddProductPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
