@@ -5,7 +5,7 @@ function AddProductPage() {
 
   return (
     <div style={{ padding: "40px" }}>
-      <button onClick={() => navigate("/")}>Назад</button>
+      <button onClick={() => navigate("/Admin")}>Назад</button>
       <h2>Добавить товар</h2>
     </div>
   );

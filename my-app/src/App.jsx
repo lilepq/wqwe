@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import AdminPage from "./AdminPage";
-import CatalogPage from "./CatalogPage";
-import AddProductPage from "./AddProductPage";
-
-
+import Header from "./components/Header";
+import AdminPage from "./pages/AdminPage";
+import CatalogPage from "./pages/CatalogPage";
+import AddProductPage from "./pages/AddProductPage";
+import Home from "./pages/Home";
 
 
 
@@ -14,7 +13,8 @@ function App() {
     <BrowserRouter>
     <Header/>
       <Routes>
-        <Route path="/" element={<AdminPage />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/Admin" element={<AdminPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/add-product" element={<AddProductPage />} />
       </Routes>
