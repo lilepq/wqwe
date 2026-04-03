@@ -1,18 +1,13 @@
 import styles from "./Card.module.css"
-function Card({ id, name }) {
+function Card({ imgSrc, title, art }) {
   return (
     <>
-      <div
-        className={styles.photo}
-        style={{
-          width: "416px",
-          height: "416px",
-          backgroundColor: "#86A1A9",
-        }}
-      >
-        <h1>{id}</h1>
-        <h2>{name}</h2>
-          
+      <div className={styles["card-wrapper"]}>
+        <img src={`${imgSrc}`} alt="" />
+        <h2>{title}</h2>
+        <p>{art}</p>
+        <button className={styles.change}>Изменить</button>
+        <button className={styles.delete}>Удалить</button>
       </div>
 
      

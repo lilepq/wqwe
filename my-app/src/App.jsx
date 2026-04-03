@@ -4,6 +4,7 @@ import AdminPage from "./pages/AdminPage";
 import CatalogPage from "./pages/CatalogPage";
 import AddProductPage from "./pages/AddProductPage";
 import Home from "./pages/Home";
+import { Editing } from "./pages/Editing";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Admin" element={<AdminPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/add-product" element={<AddProductPage />} />
+        <Route path="/editing" element={<Editing />} />
       </Routes>
     </BrowserRouter>
   );

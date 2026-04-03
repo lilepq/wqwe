@@ -10,28 +10,30 @@ function CatalogPage() {
   return (
     <main className="catalog-page">
       <div className={styles["catalog-container"]}>
-        <button
-          className={styles.back}
-          onClick={() => navigate("/Admin")}
-          type="button"
-        >
-          Вернуться назад
-        </button>
+        <div className={styles["catalog-wraper"]}>
+          <button
+            className={styles.back}
+            onClick={() => navigate("/Admin")}
+            type="button"
+          >
+            Вернуться назад
+          </button>
 
-        <h1 className={styles["catalog-title"]}>Каталог товаров</h1>
-        <div className="catalog-page__grid">
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
-          <Card id="21312" name="wqeqw" />
+          <h1 className={styles["catalog-title"]}>Каталог товаров</h1>
+          <div className={styles["catalog-grid"]}>
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+            <Card art="21312" title="wqeqw" />
+          </div>
         </div>
       </div>
     </main>
